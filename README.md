@@ -61,3 +61,4 @@ The pages that are loaded into the widgets (the dashboard parts) with jQuery.
 	+ eventually change the collection names ($COLLECTION) in the data folder for instagram, twitter and foursquare
 	+ the visitor's info is stored in collection 'visitors', to change that, go to info/storeVisitor.php and change $COLLECTION there
 	+ comments from the comment box are stored in collection 'comments', to change that, go to php/addCOmment and change $COLLECTION there
+4. set the cronjobs to update the JSON files
