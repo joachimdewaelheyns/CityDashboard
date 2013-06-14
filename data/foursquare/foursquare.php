@@ -8,7 +8,7 @@
 						$latitude = $_GET['lat'];
 						$longitude = $_GET['long'];
 
-						$url = 'https://api.mongolab.com/api/1/databases/' . $DB . '/collections/' . $COLLECTION . '?q={"loc":{"$near":["lat":'. $latitude . ',"lon":' . $longitude . ']}}&l=20&apiKey=' . $MONGOLAB_API_KEY;
+						$url = 'https://api.mongolab.com/api/1/databases/' . $DB . '/collections/' . $COLLECTION . '?q={"loc":{"$near":['. $latitude . ',' . $longitude . ']}}&l=20&apiKey=' . $MONGOLAB_API_KEY;
 
 
 						$jsondata = file_get_contents($url);
